@@ -12,7 +12,7 @@ exec_env.set_parallelism(1)
 t_config = TableConfig()
 t_env = BatchTableEnvironment.create(exec_env, t_config)
 
-input_path = './input/Sidewalk_201912.GeoJSON'
+input_path = './practice-flink-wordcount/vaccinations'
 output_path = './output/output.txt'
 if os.path.exists(output_path):
     os.remove(output_path)
